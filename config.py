@@ -24,13 +24,16 @@ except:
 
 
 # Pyrogram setup
+
+
 class PyroConf(object):
-    API_ID = int(getenv("API_ID", "6"))
-    API_HASH = getenv("API_HASH", "eb06d4abfb49dc3eeb1aeb98ae0f581e")
-    BOT_TOKEN = getenv("BOT_TOKEN")
-    SESSION_STRING = getenv("SESSION_STRING")
+    API_ID = 25439526
+    API_HASH = "58fc4e883a66c30e420d90196192c1b1"
+    BOT_TOKEN = "YOUR_NEW_BOT_TOKEN_HERE"
+    SESSION_STRING = "YOUR_NEW_SESSION_STRING_HERE"
+
     BOT_START_TIME = time()
 
-    MAX_CONCURRENT_DOWNLOADS = int(getenv("MAX_CONCURRENT_DOWNLOADS", "1"))
-    BATCH_SIZE = int(getenv("BATCH_SIZE", "1"))
-    FLOOD_WAIT_DELAY = int(getenv("FLOOD_WAIT_DELAY", "10"))
+    MAX_CONCURRENT_DOWNLOADS = 1
+    BATCH_SIZE = 1
+    FLOOD_WAIT_DELAY = 10
