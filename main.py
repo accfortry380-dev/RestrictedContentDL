@@ -51,10 +51,12 @@ bot = Client(
 
 # Client for user session
 user = Client(
-    "user_session",
-    workers=100,
+    name=None,
+    api_id=PyroConf.API_ID,
+    api_hash=PyroConf.API_HASH,
     session_string=PyroConf.SESSION_STRING,
-    max_concurrent_transmissions=1, # ✅ SAFE DEFAULT
+    workers=100,
+    max_concurrent_transmissions=1,
     sleep_threshold=30,
 )
 
